@@ -61,4 +61,28 @@ def calcular_multa (velocidade,local):
         
     def calcular_multa(velocidade, local):
         
+    while True:
+        try:
+            print ('\n Onde circulava o veículo?')
+            print ('Escolha uma opção:')
+            print ('1-Localidade')
+            print ('2 - Fora da localidade')
+            print ('3- Autoestrada')
+            print ()
+                   
+            loc = int (input ('Introduza o local (1/2/3):'))
+            
+            if loc not in {1,2,3}:
+                raise ValueError ('Introduza um valor válido')
+            vel = int (input ('Introduza a velocidade do veículo (km/h):'))
+            
+            calcular_multa (vel,loc)
+            
+            if input('\n Deseja continuar? (s/n): '). lower () =='n':
+                break
+        
+        except ValueError:
+            print ('Introduza um valor válido!')
+            input('Pressione qualquer tecla para continuar.')
+            
     
