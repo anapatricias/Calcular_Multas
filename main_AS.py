@@ -1,6 +1,4 @@
 
-    #Função para calcular multa
-
 def calcular_multa (velocidade,local):
     multa = 0
     
