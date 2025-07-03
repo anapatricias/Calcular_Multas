@@ -3,8 +3,8 @@ try:
     print('\n Onde circulava o veiculo?')
     print('Escolha uma opção:')
     print('1-Localidade')
-    print('Fora da Localidade')
-    print('Autoestrada')
+    print('2-Fora da Localidade')
+    print('3-Autoestrada')
     print()
     
     loc = int(input('Introduza o local (1/2/3):'))
