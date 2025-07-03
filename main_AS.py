@@ -36,7 +36,7 @@ def calcular_multa (velocidade,local):
         print("Sem multa.")
         
         
-
+while True:
     try:
         print ('\n Onde circulava o veículo?')
         print ('Escolha uma opção:')
@@ -56,7 +56,7 @@ def calcular_multa (velocidade,local):
         calcular_multa (vel,loc)
             
         if input('\n Deseja continuar? (s/n): '). lower () =='n':
-                
+                break 
         
     except ValueError:
        print ('Introduza um valor válido!')
